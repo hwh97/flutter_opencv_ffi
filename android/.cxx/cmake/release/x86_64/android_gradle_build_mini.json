@@ -1,0 +1,22 @@
+{
+  "buildFiles": [
+    "/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/android/CMakeLists.txt",
+    "/Users/weihong/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/Users/weihong/Library/Android/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/Users/weihong/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/android/.cxx/cmake/release/x86_64\" clean"
+  ],
+  "buildTargetsCommand": "/Users/weihong/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/android/.cxx/cmake/release/x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "native-lib-Release-x86_64": {
+      "artifactName": "native-lib",
+      "buildCommand": "/Users/weihong/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/android/.cxx/cmake/release/x86_64\" native-lib",
+      "abi": "x86_64",
+      "output": "/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/example/build/flutter_opencv_ffi/intermediates/cmake/release/obj/x86_64/libnative-lib.so",
+      "runtimeFiles": [
+        "/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/android/src/main/jniLibs/libs/x86_64/libopencv_java4.so"
+      ]
+    }
+  }
+}

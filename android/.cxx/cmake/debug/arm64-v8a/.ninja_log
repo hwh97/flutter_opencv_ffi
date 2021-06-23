@@ -1,0 +1,23 @@
+# ninja log v5
+0	44	1624431326	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	daa4001fd3d4e6d4
+44	101	1624431326	/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/example/build/flutter_opencv_ffi/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	e369749cc9c6be00
+0	2254	1624432836	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	daa4001fd3d4e6d4
+2256	2353	1624432836	/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/example/build/flutter_opencv_ffi/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	e369749cc9c6be00
+4	2140	1624435838	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	daa4001fd3d4e6d4
+2141	2238	1624435838	/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/example/build/flutter_opencv_ffi/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	e369749cc9c6be00
+1	2139	1624436383	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	daa4001fd3d4e6d4
+2139	2275	1624436383	/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/example/build/flutter_opencv_ffi/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	e369749cc9c6be00
+2	2265	1624436828	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	daa4001fd3d4e6d4
+2266	2370	1624436828	/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/example/build/flutter_opencv_ffi/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	e369749cc9c6be00
+2	1937	1624437108	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	daa4001fd3d4e6d4
+1937	2039	1624437108	/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/example/build/flutter_opencv_ffi/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	e369749cc9c6be00
+2	2201	1624438396	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	daa4001fd3d4e6d4
+2201	2305	1624438396	/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/example/build/flutter_opencv_ffi/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	e369749cc9c6be00
+2	1919	1624439562	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	daa4001fd3d4e6d4
+1919	2023	1624439562	/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/example/build/flutter_opencv_ffi/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	e369749cc9c6be00
+2	2273	1624439673	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	daa4001fd3d4e6d4
+2273	2371	1624439673	/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/example/build/flutter_opencv_ffi/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	e369749cc9c6be00
+2	2016	1624439740	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	daa4001fd3d4e6d4
+2016	2121	1624439740	/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/example/build/flutter_opencv_ffi/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	e369749cc9c6be00
+2	2292	1624441850	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	daa4001fd3d4e6d4
+2293	2395	1624441850	/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/example/build/flutter_opencv_ffi/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	e369749cc9c6be00

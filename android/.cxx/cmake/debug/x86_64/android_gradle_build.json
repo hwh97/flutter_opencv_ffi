@@ -1,0 +1,45 @@
+{
+  "stringTable": {
+    "0": "/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/android/.cxx/cmake/debug/x86_64",
+    "1": "--target=x86_64-none-linux-android21 --gcc-toolchain=/Users/weihong/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/weihong/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dnative_lib_EXPORTS -I../../../../src/main/cpp/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC"
+  },
+  "buildFiles": [
+    "/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/android/CMakeLists.txt",
+    "/Users/weihong/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/Users/weihong/Library/Android/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/Users/weihong/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/android/.cxx/cmake/debug/x86_64\" clean"
+  ],
+  "buildTargetsCommand": "/Users/weihong/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/android/.cxx/cmake/debug/x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "native-lib-Debug-x86_64": {
+      "buildCommand": "/Users/weihong/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/android/.cxx/cmake/debug/x86_64\" native-lib",
+      "buildType": "debug",
+      "toolchain": "3324928674",
+      "abi": "x86_64",
+      "artifactName": "native-lib",
+      "files": [
+        {
+          "src": "/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/android/src/main/cpp/native-lib.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/example/build/flutter_opencv_ffi/intermediates/cmake/debug/obj/x86_64/libnative-lib.so",
+      "runtimeFiles": [
+        "/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/android/src/main/jniLibs/libs/x86_64/libopencv_java4.so"
+      ]
+    }
+  },
+  "toolchains": {
+    "3324928674": {
+      "cppCompilerExecutable": "/Users/weihong/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

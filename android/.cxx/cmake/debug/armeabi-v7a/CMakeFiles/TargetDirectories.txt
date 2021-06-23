@@ -1,0 +1,3 @@
+/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/android/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/native-lib.dir
