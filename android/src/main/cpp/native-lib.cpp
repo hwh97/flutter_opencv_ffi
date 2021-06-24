@@ -1,5 +1,4 @@
 #include <opencv2/opencv.hpp>
-#include <opencv2/freetype.hpp>
 
 using namespace cv;
 using namespace std;
@@ -76,8 +75,6 @@ extern "C" {
     void add_text_mark(char* text, char* joinImagePath, char* outputImagePath, double alpha, int position) {
         Mat main_image, text_image;
         main_image = imread(joinImagePath);
-
-        FreeType2 ft2 = freetype::createFreeType2();
 
         // text params
         int font = FONT_HERSHEY_SIMPLEX;
