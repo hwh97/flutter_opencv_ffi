@@ -1,3 +1,0 @@
-ninja: Entering directory `/Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/android/.cxx/cmake/debug/x86'
-[1/2] Building CXX object CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o
-[2/2] Linking CXX shared library /Users/weihong/Documents/personal/flutter/plugins/flutter_opencv_ffi/example/build/flutter_opencv_ffi/intermediates/cmake/debug/obj/x86/libnative-lib.so
