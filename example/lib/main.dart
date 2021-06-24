@@ -66,20 +66,40 @@ class _MyAppState extends State<MyApp> {
             textAlign: TextAlign.center,
           ),
         ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () async {
-            String storageDirBasePath = (await getExternalStorageDirectory())!.path;
-            print(storageDirBasePath);
-            FlutterOpencvFfi.addImageMask(
-              path.join(storageDirBasePath, "mask.jpg"),
-              path.join(storageDirBasePath, "source.png"),
-              path.join(storageDirBasePath, "result.png"),
-              0.3,
-              maskPosition: MaskPosition.BottomLeft,
-              markRatio: 0.2, // decrease size of image to 50%
-            );
-          },
-          child: Icon(Icons.add),
+        floatingActionButton: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            // add imagemark
+            FloatingActionButton(
+              onPressed: () async {
+                String storageDirBasePath = (await getExternalStorageDirectory())!.path;
+                FlutterOpencvFfi.addImageMask(
+                  path.join(storageDirBasePath, "mask.jpg"),
+                  path.join(storageDirBasePath, "source.png"),
+                  path.join(storageDirBasePath, "result_image_mark.png"),
+                  0.3,
+                  maskPosition: MaskPosition.Center,
+                  markRatio: 0.2, // decrease size of image to 50%
+                );
+              },
+              child: Icon(Icons.image),
+            ),
+            SizedBox(height: 20,),
+            // add textmark
+            FloatingActionButton(
+              onPressed: () async {
+                String storageDirBasePath = (await getExternalStorageDirectory())!.path;
+                FlutterOpencvFfi.addTextMask(
+                  "@Andy.huang",
+                  path.join(storageDirBasePath, "source.png"),
+                  path.join(storageDirBasePath, "result_text_mark.png"),
+                  0.3,
+                  maskPosition: MaskPosition.BottomRight,
+                );
+              },
+              child: Icon(Icons.text_format),
+            )
+          ],
         ),
       ),
     );
