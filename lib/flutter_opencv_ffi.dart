@@ -8,19 +8,27 @@ import 'package:flutter/services.dart';
 
 // c functions
 typedef _version_func = Pointer<Utf8> Function();
-typedef _add_image_mask = Void Function(Pointer<Utf8>, Pointer<Utf8>,
+typedef _add_image_mask = Pointer<Utf8> Function(Pointer<Utf8>, Pointer<Utf8>,
     Pointer<Utf8>, Double, Int32 position, Double markRatio);
-typedef _add_text_mask = Void Function(
-    Pointer<Utf8>, Pointer<Utf8>, Pointer<Utf8>, Double, Int32 position);
+typedef _add_text_mask = Pointer<Utf8> Function(
+    Pointer<Utf8>,
+    Pointer<Utf8>,
+    Pointer<Utf8>,
+    Int32 position,
+    Double scale,
+    Double thickness,
+    Int32 colorR,
+    Int32 colorG,
+    Int32 colorB);
 
 // dart functions
 typedef _VersionFunc = Pointer<Utf8> Function();
-typedef _AddImageMask = void Function(
+typedef _AddImageMask = Pointer<Utf8> Function(
     Pointer<Utf8>, Pointer<Utf8>, Pointer<Utf8>, double, int, double);
-typedef _AddTextMask = void Function(
-    Pointer<Utf8>, Pointer<Utf8>, Pointer<Utf8>, double, int);
+typedef _AddTextMask = Pointer<Utf8> Function(Pointer<Utf8>, Pointer<Utf8>,
+    Pointer<Utf8>, int, double, double, int, int, int);
 
-enum MaskPosition {
+enum MarkPosition {
   TopLeft,
   TopRight,
   BottomLeft,
@@ -55,21 +63,21 @@ class FlutterOpencvFfi {
     }
   }
 
-  static void addImageMask(
+  static String? addImageMask(
     String markImage,
     String joinImage,
     String outputPath,
     double alpha, {
-    MaskPosition maskPosition = MaskPosition.BottomRight,
+    MarkPosition maskPosition = MarkPosition.BottomRight,
     double markRatio = 1.0,
   }) {
-    assert(alpha > 0.0 && alpha <= 1);
+    assert(alpha >= 0.0 && alpha <= 1);
     assert(markRatio > 0.0 && markRatio <= 1);
     try {
       final _AddImageMask _addFunc = nativelib!
           .lookup<NativeFunction<_add_image_mask>>('add_image_mark')
           .asFunction();
-      _addFunc(
+      Pointer<Utf8> result = _addFunc(
         markImage.toNativeUtf8(),
         joinImage.toNativeUtf8(),
         outputPath.toNativeUtf8(),
@@ -77,30 +85,48 @@ class FlutterOpencvFfi {
         maskPosition.index,
         markRatio,
       );
+      if (result.address == nullptr.address) {
+        return null;
+      } else {
+        return result.toDartString();
+      }
     } catch (e) {
       debugPrint("add_image_mask failed $e");
     }
+    return null;
   }
 
-  static void addTextMask(
+  static String? addTextMask(
     String textMark,
     String joinImage,
-    String outputPath,
-    double alpha, {
-    MaskPosition maskPosition = MaskPosition.TopLeft,
+    String outputPath, {
+    MarkPosition maskPosition = MarkPosition.TopLeft,
+    double scale = 1,
+    double thickness = 1,
+    int colorR = 255,
+    int colorG = 255,
+    int colorB = 255
   }) {
-    assert(alpha > 0.0 && alpha <= 1);
     try {
       final _AddTextMask _addFunc = nativelib!
           .lookup<NativeFunction<_add_text_mask>>('add_text_mark')
           .asFunction();
-      _addFunc(
+      final result = _addFunc(
         textMark.toNativeUtf8(),
         joinImage.toNativeUtf8(),
         outputPath.toNativeUtf8(),
-        alpha,
         maskPosition.index,
+        scale,
+        thickness,
+        colorR,
+        colorG,
+        colorB,
       );
+      if (result.address == nullptr.address) {
+        return null;
+      } else {
+        return result.toDartString();
+      }
     } catch (e) {
       debugPrint("add_image_mask failed $e");
     }

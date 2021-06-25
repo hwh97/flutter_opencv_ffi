@@ -20,4 +20,16 @@ A new Flutter project.
   # Flutter.framework does not contain a i386 slice.
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
   s.swift_version = '5.0'
+
+  # opencv
+  # telling CocoaPods not to remove framework
+  s.preserve_paths = 'opencv2.framework'
+  # telling linker to include opencv2 framework
+  s.xcconfig = { 'OTHER_LDFLAGS' => '-framework opencv2' }
+  # including OpenCV framework
+  s.vendored_frameworks = 'opencv2.framework'
+  # including native framework
+  s.frameworks = 'AVFoundation'
+  # including C++ library
+  s.library = 'c++'
 end
