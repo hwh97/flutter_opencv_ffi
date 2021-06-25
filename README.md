@@ -1,15 +1,14 @@
 # flutter_opencv_ffi
+**opencv version: 4.5.2**
 
-A new Flutter project.
+**Note: Manually add Opencv2.framework to the plugin ios folder**  
+**注意：手动将Opencv2.framework添加到插件ios文件夹中**
 
-## Getting Started
+![截图](https://github.com/hwh97/screenshot_res/blob/master/flutter_opencv_ffi/a-s-1.png)
+![截图](https://github.com/hwh97/screenshot_res/blob/master/flutter_opencv_ffi/a-s-2.png)
+![截图](https://github.com/hwh97/screenshot_res/blob/master/flutter_opencv_ffi/a-s-3.jpg)
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
+![截图](https://github.com/hwh97/screenshot_res/blob/master/flutter_opencv_ffi/i-s-1.PNG)
+![截图](https://github.com/hwh97/screenshot_res/blob/master/flutter_opencv_ffi/i-s-2.PNG)
+![截图](https://github.com/hwh97/screenshot_res/blob/master/flutter_opencv_ffi/i-s-3.PNG)
+![截图](https://github.com/hwh97/screenshot_res/blob/master/flutter_opencv_ffi/i-s-4.PNG)
